@@ -4,7 +4,7 @@ An application built with react, redux, webpack.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-<img src="screenshot.png" alt="Screenshot" style="height: 40px;"/>
+<img src="screenshot.png" alt="Screenshot" style="height: 10px;"/>
 
 
 
