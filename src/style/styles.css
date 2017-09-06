@@ -1,0 +1,108 @@
+@value styles: "./common.css";
+@value color-main, font-family from styles;
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga", "kern";
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    background: linear-gradient(210deg, #9adbbe, color-main);
+}
+body {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: font-family;
+}
+#root {
+    min-height: 50vh;
+    min-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1em;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(25,25,25,.25);
+    padding: 1em;
+}
+.button {
+    /*position: relative;*/
+    font-size: 16px;
+    margin: 0 .5em;
+    border-radius: 2em;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    background: none;
+    letter-spacing: 1px;
+    font-family: font-family;
+    color: color-main;
+    border: color-main 1px solid;
+    transition: 250ms ease-out;
+}
+.button:hover,
+.button:focus {
+    color: #fff;
+    background: color-main;
+    outline: none;
+}
+
+.undoredo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.undo {
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.redo {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.input {
+    width: 68%;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 .5em;
+    border-radius: 2em;
+    padding: 0.75em 1.5em;
+    background: none;
+    font-family: font-family;
+    border: #e3e3e3 1px solid;
+    transition: border 250ms ease-out;
+}
+
+.input:focus {
+    border: color-main 1px solid;
+    outline: none;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 3px;
+    transition: 200ms;
+    color: color-main;
+    font-size: 24px;
+}
